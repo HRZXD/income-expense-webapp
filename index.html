@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting_Program</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Accounting Program</h2>
+    <div class="container">
+        <h4>Balance (Baht)</h4>
+        <h1 id="balance">$0.00</h1>
+        <div class="income-expense-container">
+            <div class="income">
+                <h4>My Income</h4>
+                <p id="money-plus" class="money plus">$ 0.00</p>
+            </div>
+            <div class="expense">
+                <h4>My Expense</h4>
+                <p id="money-minus" class="money minus">$ 0.00</p>
+            </div>
+        </div>
+        <h3>Transaction History</h3>
+        <ul id="list" class="list"></ul>
+        <h3>Add Transaction</h3>
+        <form id="form" name="google-sheet" method="post">
+            <div class="form-control">
+                <label for="text" class="lb-text"><b>Name Transaction</b></label>
+                <input type="text" id="text" placeholder="Specify the Transaction" name="name">
+            </div>
+            <div class="form-control">
+                <label for="amount" class="lb-text"><b>Amount</b> <br>
+                    <b>(+,blank :Income , - :Expense)</b>
+                </label>
+                <input type="number" id="amount" placeholder="Specify The Amount" name="amount">
+                <label for="balance" class="lb-text">
+                    <b>Specify This Data To Know Balance And Date</b>
+                </label>
+                <input type="number" id="balancePost" placeholder="Enter Balance at Last" name="balance">
+                <input type="date" id="date" name="date">
+            </div>
+            <button class="btn-add-transaction" type="submit" name="submit">Confirm</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
