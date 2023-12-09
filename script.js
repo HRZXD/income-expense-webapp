@@ -38,9 +38,9 @@ function calculateMoney(){
     const inCome = amounts.filter(items=>items>0).reduce((result,items)=>(result+=items),0).toFixed(2);
     const expEnse = (amounts.filter(items=>items<0).reduce((result,items)=>(result+=items),0)*-1).toFixed(2);
 
-    balance.innerText ="฿"+formatNum(totalBl);
-    moneyPlus.innerText = "฿"+formatNum(inCome);
-    moneyMinus.innerText = "฿"+formatNum(expEnse);
+    balance.innerText ="$"+formatNum(totalBl);
+    moneyPlus.innerText = "$"+formatNum(inCome);
+    moneyMinus.innerText = "$"+formatNum(expEnse);
 }
 function removeData(id){
     transactions = transactions.filter(transactions=>transactions.id !== id)
