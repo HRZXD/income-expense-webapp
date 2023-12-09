@@ -75,5 +75,6 @@ function doPost (e) {
     
 ## I hope it will be useful for anyone
 
+Some Code is from Kongraksiam Studio
 Thanks for use it :smile:
 
